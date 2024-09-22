@@ -20,7 +20,7 @@ export default function Home() {
     getResume();
     getActivities();
     getSoftSkills();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <Layout>
@@ -34,7 +34,7 @@ export default function Home() {
         </div>
       </section>
       <section className="mt-8">
-        <h2 className="text-white font-semibold text-2xl">What i&apos;m doing</h2>
+        <h2 className="text-white font-semibold text-2xl">A que me dedico</h2>
         <div className=" grid grid-cols-2 gap-3 mt-5">
           {activities?.length === 0
             ? null
@@ -57,11 +57,11 @@ export default function Home() {
       <section className="mt-8">
         <h2 className="text-white font-semibold text-2xl">Tech Stack</h2>
         <div className="flex justify-center gap-5">
-          {icons.get('ts')}
-          {icons.get('nextjs')}
+          {icons.get("ts")}
+          {icons.get("nextjs")}
           {icons.get("code-lg")}
-          {icons.get('nestjs')}
-          {icons.get('node')}
+          {icons.get("nestjs")}
+          {icons.get("node")}
         </div>
       </section>
     </Layout>

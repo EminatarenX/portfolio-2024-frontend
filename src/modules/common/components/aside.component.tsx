@@ -25,10 +25,10 @@ export default function Aside() {
     </div>
     <div className='w-full border-t border-neutral-600'></div>
     <div className="flex flex-col items-center gap-5 ">
-        <Info type='email' content={profile?.email || ''}/> 
-        <Info type='phone' content={profile?.phone || ''}/>
-        <Info type='birthday' content={profile?.birthDay || ''}/>
-        <Info type='location' content={profile?.location || ''} />
+        <Info name="correo" type='email' content={profile?.email || ''}/> 
+        <Info name="teléfono" type='phone' content={profile?.phone || ''}/>
+        <Info name="b-day" type='birthday' content={profile?.birthDay || ''}/>
+        <Info name="ubicación" type='location' content={profile?.location || ''} />
     </div>
     <div className='flex justify-center gap-5'>
         <GitHubIcon  sx={{color: 'white'}}/>

@@ -3,15 +3,15 @@ export function useLayout(pathname: string) {
     const routes = [
         {
             path: '/',
-            name: 'about',
+            name: 'Sobre mi',
         },
         {
             path: '/resume',
-            name: 'resume',
+            name: 'Resumen',
         },
         {
             path: '/portfolio',
-            name: 'portfolio',
+            name: 'Portafolio',
         },
         {
             path: '/blog',
@@ -19,18 +19,18 @@ export function useLayout(pathname: string) {
         },
         {
             path: '/contact',
-            name: 'contact',
+            name: 'Contacto',
         }
     ]
     const title =
     pathname === "/"
-      ? "about"
+      ? "Sobre mi"
       : pathname === "/resume"
-      ? "Resume"
+      ? "Resumen"
       : pathname === "/contact"
-      ? "Contact"
+      ? "Contacto"
       : pathname === "/portfolio"
-      ? "Portfolio"
+      ? "Portafolio"
       : "Blog";
     return {
         title,

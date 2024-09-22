@@ -7,9 +7,10 @@ import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
 interface Props {
   type: string;
   content: string;
+  name: string
 }
 
-export default function Info({ type, content}: Props) {
+export default function Info({ type, content, name}: Props) {
 
   const icon = () => {
     switch (type) {
@@ -28,7 +29,7 @@ export default function Info({ type, content}: Props) {
       {icon()}
     </div>
     <div>
-       <h1 className="text-neutral-400 text-sm uppercase">{type}</h1>
+       <h1 className="text-neutral-400 text-sm uppercase">{name}</h1>
        <p className="text-white text-sm">{content}</p>
     </div>
 </div>

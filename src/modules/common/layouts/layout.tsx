@@ -20,7 +20,7 @@ export default function Layout({ children }: Props) {
       <div className="flex-1 py-14 overflow-auto scrollbar-hide">
         <section className="flex  flex-col  px-8 pt-10 pb-12 bg-neutral-900  rounded-2xl border border-neutral-800 relative ">
           <header className="flex justify-between">
-            <h1 className="text-white text-3xl font-bold mb-3 capitalize">
+            <h1 className="text-white text-3xl font-bold mb-3 ">
               {title}
             </h1>
             <nav className="absolute top-0 right-0 px-10 py-4 bg-neutral-800 rounded-bl-2xl border-b border-l border-neutral-700">
