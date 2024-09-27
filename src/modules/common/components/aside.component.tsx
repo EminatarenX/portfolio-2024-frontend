@@ -11,7 +11,8 @@ export default function Aside() {
     const profile = useProfileStore( state => state.profile)
     useEffect(() => {
       getProfile()
-    })
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
   return (
     <aside className="flex flex-col w-1/4 px-10 py-10 bg-neutral-900 my-14 rounded-2xl border border-neutral-800 justify-between">
     <div className="flex flex-col gap-5 items-center">
