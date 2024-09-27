@@ -16,7 +16,7 @@ export default function Project({ project}: Props) {
         height={500}
           src={project.image}
           alt="project-image"
-          className="object-cover rounded-xl group-hover:scale-125 duration-300"
+          className="object-cover h-40 rounded-xl group-hover:scale-125 duration-300"
         />
         <div className="w-full h-full bg-opacity-0 group-hover:bg-opacity-60 bg-neutral-900 absolute top-0 left-0 flex justify-center items-center transition-all">
           <Link href={project.link} className="rounded-lg p-4 scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100 bg-neutral-700 transition-all duration-300">

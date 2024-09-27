@@ -1,3 +1,8 @@
 {
-    "editor.stickyScroll.scrollWithEditor": false
+    "editor.stickyScroll.scrollWithEditor": false,
+    "vim.leader": "<Space",
+    "vim..normalModeKeyBindingsNonRecursive": [
+      {"before": ["<S-h>"], "command": [":vsplit"]},
+      {"before": ["<S-l>"], "command": [":split"]}
+    ]
 }

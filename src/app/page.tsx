@@ -12,7 +12,7 @@ export default function Home() {
   const resume = useResumeStore((state) => state.resume);
   const getActivities = useActivityStore((state) => state.getActivities);
   const activities = useActivityStore((state) => state.activities);
-  const resumeParagraphs = resume?.content.split("\n");
+  const resumeParagraphs = resume && resume?.content.split("\n");
   const getSoftSkills = useSoftSkillStore((state) => state.getSoftSkills);
   const softSkills = useSoftSkillStore((state) => state.softSkills);
   const { icons } = useIcons();
@@ -26,7 +26,7 @@ export default function Home() {
     <Layout>
       <section>
         <div className="flex flex-col gap-4 mt-4">
-          {resumeParagraphs?.map((p, i) => (
+          {!resumeParagraphs?.length ? null : resumeParagraphs?.map((p, i) => (
             <p key={i} className="text-white">
               {p}
             </p>

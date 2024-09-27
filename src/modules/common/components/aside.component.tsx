@@ -15,10 +15,10 @@ export default function Aside() {
   return (
     <aside className="flex flex-col w-1/4 px-10 py-10 bg-neutral-900 my-14 rounded-2xl border border-neutral-800 justify-between">
     <div className="flex flex-col gap-5 items-center">
-        <div className="bg-gradient-to-br from-neutral-800 to-[#212121] p-8 rounded-[30px] ">
-            <Image src="/profile.jpeg" alt="Logo" width={500} height={500} className='rounded-full w-full max-h-[90px]'/>
+        <div className="bg-gradient-to-br from-neutral-800 to-[#212121] p-4 rounded-[2rem]  ">
+            <Image src="/profile.jpeg" alt="Logo" width={500} height={500} className='rounded-full w-full max-h-[120px]'/>
         </div>
-        <h1 className="text-white font-semibold text-2xl text-center">Emiliano Nataren Del Rivero</h1>
+        <h1 className="text-white font-semibold text-2xl text-center">{profile?.name || ''}</h1>
         <span className="bg-neutral-800 px-4 py-2 rounded-lg">
             <h2 className="text-white text-xs">{profile?.specialty}</h2>
         </span>

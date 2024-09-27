@@ -32,7 +32,7 @@ export default function Layout({ children }: Props) {
                       pathname === route.path
                         ? "text-yellow-200"
                         : "text-neutral-400"
-                    } font-semibold capitalize`}
+                    } font-semibold `}
                     href={route.path}
                   >
                     {route.name}
