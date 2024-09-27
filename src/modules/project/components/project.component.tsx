@@ -12,8 +12,6 @@ export default function Project({ project }: Props) {
     <article className="rounded-xl flex flex-col gap-3 group max-h-96">
       <div className="relative overflow-hidden rounded-xl ">
         <img
-          width={500}
-          height={500}
           src={project.image}
           alt="project-image"
           className="object-cover h-40 rounded-xl group-hover:scale-125 duration-300"
