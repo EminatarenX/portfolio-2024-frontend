@@ -3,16 +3,11 @@ import Layout from '@/modules/common/layouts/layout'
 import Project from '@/modules/project/components/project.component'
 import ProjectLayout from '@/modules/project/layouts/project-layout.component'
 import { useProjectStore } from '@/stores/project.store'
-import React, { useEffect } from 'react'
+import React from 'react'
 
 export default function PortfolioPage() {
   const projects = useProjectStore( state => state.projects)
-  const getProjects = useProjectStore( state  => state.getProjects)
-
-  useEffect(() => {
-    getProjects()
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[])
+ 
   return (
     <Layout>
       <ProjectLayout />

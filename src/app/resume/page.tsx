@@ -8,26 +8,15 @@ import { useEducationStore } from "@/stores/education.store";
 import { useExperienceStore } from "@/stores/experience.store";
 import { useLanguageStore } from "@/stores/languages.store";
 import { useSkillStore } from "@/stores/skill.store";
-import React, { useEffect } from "react";
+import React from "react";
 
 export default function ResumePage() {
   const { icons }  = useIcons();
   const educationList = useEducationStore( state => state.education)
-  const getEducationList = useEducationStore( state => state.getEducationList)
   const experienceList = useExperienceStore( state => state.experience)
-  const getExperienceList = useExperienceStore( state => state.getExperience)
-  const getLanguages = useLanguageStore( state => state.getLanguages)
   const languages = useLanguageStore( state => state.languages)
   const skills = useSkillStore( state => state.skills)
-  const getSkills = useSkillStore( state => state.getSkills)
 
-  useEffect( () => {
-    getEducationList()
-    getExperienceList()
-    getLanguages()
-    getSkills()
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
   return (
     <Layout>
       <section className="mt-10">
